@@ -38,7 +38,7 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
         $scope.noOfPages = '';
         $scope.beginIndex = '';
         $scope.searchItemModel = '';
-        $scope.currentImageUrl = '';
+       // $scope.currentImageUrl = '';
         myService.getData().then(function (d)
         {
             $scope.jsonData = $.parseXML(d.data);
@@ -153,17 +153,17 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
             $scope.updateIndex(1);
         }
 
-        $scope.zoom = function (x, $index)
+        $scope.zoom = function (x, $index, e)
         {
 // $('.SecondParentDiv').css('height', $(document).height());
             $scope.cuurentIndex = $index;
-            if ($scope.currentImageUrl === '')
-            {
-                $scope.currentImageUrl = x.path[0];
-            }
+//            if ($scope.currentImageUrl === '')
+//            {
+//                $scope.currentImageUrl = x.path[0];
+//            }
             $scope.imageArray = x.path;
             //alert($scope.imageArray);
-            $('.zoomImage').attr('src', $scope.currentImageUrl);
+            $('.zoomImage').attr('src', $(e.target).attr('ng-src'));
             $scope.getValue();
         }
         $scope.zoomReplicate = function (x)
@@ -235,7 +235,7 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
         $scope.closeImage = function ()
         {
             $('.SecondParentDiv').hide();
-            $scope.currentImageUrl = '';
+            //$scope.currentImageUrl = '';
         }
         $scope.updateIndex = function (x)
         {
@@ -312,7 +312,7 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
             {
                 if ($(this).hasClass('smallImage'))
                 {
-                    $scope.currentImageUrl = p;
+                    //$scope.currentImageUrl = p;
                     $(this).attr('ng-src', p);
                     $(this).attr('src', p);
                 }
