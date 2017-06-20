@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<root>
+    <images folder="models" data-filter="Kurti">
+        <model serachTag="MS/17/001">
+            <image>kurti001_01.jpeg</image>  
+            <image>kurti001_02.jpeg</image>  
+        </model>
+        <model serachTag="MS/17/002">
+            <image>kurti002_01.jpeg</image>  
+            <image>kurti002_02.jpeg</image>  
+        </model>
+        <model serachTag="MS/17/003">
+            <image>kurti003_01.jpeg</image>  
+            <image>kurti003_02.jpeg</image>  
+        </model>
+    </images>
+
+        
+</root>
