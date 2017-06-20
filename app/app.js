@@ -89,7 +89,7 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
                     $scope.filteredSearchData = jsonObj;
                     $scope.filteredSearchData = JSON.parse($scope.filteredSearchData);
                     myService.myCategoryJsonData = $scope.filteredSearchData;
-                    console.log($scope.filteredSearchData.length);
+                    //console.log($scope.filteredSearchData.length);
                     $scope.noOfPages = Math.ceil(parseInt($scope.filteredSearchData.length) / parseInt(10));
                     var calculateWidth = 0;
                     if (parseInt($scope.noOfPages) > parseInt('9'))
@@ -162,7 +162,7 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
 //                $scope.currentImageUrl = x.path[0];
 //            }
             $scope.imageArray = x.path;
-            //alert($scope.imageArray);
+            alert($(e.target).attr('ng-src'));
             $('.zoomImage').attr('src', $(e.target).attr('ng-src'));
             $scope.getValue();
         }
