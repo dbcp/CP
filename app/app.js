@@ -162,7 +162,7 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
 //                $scope.currentImageUrl = x.path[0];
 //            }
             $scope.imageArray = x.path;
-            alert($(e.target).attr('ng-src'));
+            //alert($(e.target).attr('ng-src'));
             $('.zoomImage').attr('src', $(e.target).attr('ng-src'));
             $scope.getValue();
         }
