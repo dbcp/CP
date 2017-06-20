@@ -42,7 +42,7 @@
                         <div ng-repeat="x in filteredSearchData| filter: {'serachTag': searchItemModel} | startFrom:beginIndex | limitTo:10" class='currentImage'>
                             <div id="path" class='row'>
                                 <div style="width: 100%;height: 100%;" class='row'> 
-                                    <img ng-src='{{x.path[0]}}' class='smallImage img-responsive center-block' ng-click="zoom(x, $index)">
+                                    <img ng-src='{{x.path[0]}}' class='smallImage img-responsive center-block' ng-click="zoom(x, $index, $event)">
                                 </div>
                                 <div class='patchThumbnail'>
                                     <div ng-repeat = "p in x.path">
