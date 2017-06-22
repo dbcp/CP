@@ -38,7 +38,7 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
         $scope.noOfPages = '';
         $scope.beginIndex = '';
         $scope.searchItemModel = '';
-       // $scope.currentImageUrl = '';
+        // $scope.currentImageUrl = '';
         myService.getData().then(function (d)
         {
             $scope.jsonData = $.parseXML(d.data);
@@ -317,5 +317,12 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
                     $(this).attr('src', p);
                 }
             });
+        }
+        $scope.share = function (e)
+        {
+            var data = $(e.target).parent().parent().parent().parent().find('img').attr('ng-src');
+            data = data.split('/');
+            $('#whtsapp').find('a').attr('href', 'whatsapp://send?text=https://raw.githubusercontent.com/dbcp/cp/master/models/' + data[1]);
+            //alert(data[1]);
         }
     }]);

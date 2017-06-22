@@ -65,11 +65,7 @@ body{
     background-image: url('../images/previous_o.jpg');
 
 }
-.zommImageParent{
-    width:80%;
-    //height:40%;
-    height:500px;
-}
+
 .rightPanel
 {
     width: 10%;
@@ -192,6 +188,12 @@ li.active
 .cutout
 {
     padding: 0;
+}
+.zommImageParent{
+    width:80%;
+    height:500px;
+    position: relative;
+    margin-top: 10%;
 }
 .thumbnail{
     width: auto;
