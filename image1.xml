@@ -9,16 +9,164 @@ and open the template in the editor.
 <root>
     <images folder="models" data-filter="Kurti">
         <model serachTag="MS/17/001">
-            <image>kurti001_01.jpeg</image>  
-            <image>kurti001_02.jpeg</image>  
+            <image>kurti1.jpeg</image>  
+            <image>kurti1_1.jpeg</image>  
         </model>
         <model serachTag="MS/17/002">
-            <image>kurti002_01.jpeg</image>  
-            <image>kurti002_02.jpeg</image>  
+            <image>kurti2.jpeg</image>  
+            <image>kurti2_2.jpeg</image> 
         </model>
         <model serachTag="MS/17/003">
-            <image>kurti003_01.jpeg</image>  
-            <image>kurti003_02.jpeg</image>  
+            <image>kurti3.jpeg</image>  
+            <image>kurti3_3.jpeg</image>
+        </model>
+        <model serachTag="MS/17/004">
+            <image>kurti4.jpeg</image>  
+            <image>kurti4_4.jpeg</image>
+        </model>
+        <model serachTag="MS/17/005">
+            <image>kurti5.jpeg</image>  
+            <image>kurti5_5.jpeg</image>
+        </model>
+        <model serachTag="MS/17/006">
+            <image>kurti6.jpeg</image>  
+            <image>kurti6_6.jpeg</image>
+        </model>
+        <model serachTag="MS/17/007">
+            <image>kurti7.jpeg</image>  
+            <image>kurti7_7.jpeg</image>
+        </model>
+        <model serachTag="MS/17/008">
+            <image>kurti8.jpeg</image>  
+            <image>kurti8_8.jpeg</image>
+        </model>
+        <model serachTag="MS/17/009">
+            <image>kurti9.jpeg</image>  
+            <image>kurti9_9.jpeg</image>
+        </model>
+        <model serachTag="MS/17/010">
+            <image>kurti10.jpeg</image>  
+            <image>kurti10_10.jpeg</image>
+        </model>
+        <model serachTag="MS/17/011">
+            <image>kurti11.jpeg</image>  
+            <image>kurti11_11.jpeg</image>  
+        </model>
+        <model serachTag="MS/17/012">
+            <image>kurti12.jpeg</image>  
+            <image>kurti12_12.jpeg</image> 
+        </model>
+        <model serachTag="MS/17/013">
+            <image>kurti13.jpeg</image>  
+            <image>kurti13_13.jpeg</image>
+        </model>
+        <model serachTag="MS/17/014">
+            <image>kurti14.jpeg</image>  
+            <image>kurti14_14.jpeg</image>
+        </model>
+        <model serachTag="MS/17/015">
+            <image>kurti15.jpeg</image>  
+            <image>kurti15_15.jpeg</image>
+        </model>
+        <model serachTag="MS/17/016">
+            <image>kurti16.jpeg</image>  
+            <image>kurti16_16.jpeg</image>
+        </model>
+        <model serachTag="MS/17/017">
+            <image>kurti17.jpeg</image>  
+            <image>kurti17_17.jpeg</image>
+        </model>
+        <model serachTag="MS/17/018">
+            <image>kurti18.jpeg</image>  
+            <image>kurti18_18.jpeg</image>
+        </model>
+        <model serachTag="MS/17/019">
+            <image>kurti19.jpeg</image>  
+            <image>kurti19_19.jpeg</image>
+        </model>
+        <model serachTag="MS/17/020">
+            <image>kurti20.jpeg</image>  
+            <image>kurti20_20.jpeg</image>
+        </model>
+        <model serachTag="MS/17/021">
+            <image>kurti21.jpeg</image>  
+            <image>kurti21_21.jpeg</image>  
+        </model>
+        <model serachTag="MS/17/022">
+            <image>kurti22.jpeg</image>  
+            <image>kurti22_22.jpeg</image> 
+        </model>
+        <model serachTag="MS/17/023">
+            <image>kurti23.jpeg</image>  
+            <image>kurti23_23.jpeg</image>
+        </model>
+        <model serachTag="MS/17/024">
+            <image>kurti24.jpeg</image>  
+            <image>kurti24_24.jpeg</image>
+        </model>
+        <model serachTag="MS/17/025">
+            <image>kurti25.jpeg</image>  
+            <image>kurti25_25.jpeg</image>
+        </model>
+        <model serachTag="MS/17/026">
+            <image>kurti26.jpeg</image>  
+            <image>kurti26_26.jpeg</image>
+        </model>
+        <model serachTag="MS/17/027">
+            <image>kurti27.jpeg</image>  
+            <image>kurti27_27.jpeg</image>
+        </model>
+        <model serachTag="MS/17/028">
+            <image>kurti28.jpeg</image>  
+            <image>kurti28_28.jpeg</image>
+        </model>
+        <model serachTag="MS/17/029">
+            <image>kurti29.jpeg</image>  
+            <image>kurti29_29.jpeg</image>
+        </model>
+        <model serachTag="MS/17/030">
+            <image>kurti30.jpeg</image>  
+            <image>kurti30_30.jpeg</image>
+        </model>
+        <model serachTag="MS/17/031">
+            <image>kurti31.jpeg</image>  
+            <image>kurti31_31.jpeg</image>  
+        </model>
+        <model serachTag="MS/17/032">
+            <image>kurti32.jpeg</image>  
+            <image>kurti32_32.jpeg</image> 
+        </model>
+        <model serachTag="MS/17/033">
+            <image>kurti33.jpeg</image>  
+            <image>kurti33_33.jpeg</image>
+        </model>
+        <model serachTag="MS/17/034">
+            <image>kurti34.jpeg</image>  
+            <image>kurti34_34.jpeg</image>
+        </model>
+        <model serachTag="MS/17/035">
+            <image>kurti35.jpeg</image>  
+            <image>kurti35_35.jpeg</image>
+        </model>
+        <model serachTag="MS/17/036">
+            <image>kurti36.jpeg</image>  
+            <image>kurti36_36.jpeg</image>
+        </model>
+        <model serachTag="MS/17/037">
+            <image>kurti37.jpeg</image>  
+            <image>kurti37_37.jpeg</image>
+        </model>
+        <model serachTag="MS/17/038">
+            <image>kurti38.jpeg</image>  
+            <image>kurti38_38.jpeg</image>
+        </model>
+        <model serachTag="MS/17/039">
+            <image>kurti39.jpeg</image>  
+            <image>kurti39_39.jpeg</image>
+        </model>
+        <model serachTag="MS/17/040">
+            <image>kurti40.jpeg</image>  
+            <image>kurti40_40.jpeg</image>
         </model>
     </images>
 
