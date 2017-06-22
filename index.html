@@ -48,7 +48,7 @@
                                     <div ng-repeat = "p in x.path">
                                         <img ng-src = '{{p}}' class='thumbnail img-responsive' ng-click="thumbNailClick(p, $index, $event)">
                                     </div>
-                                    <div id='whtsapp' ng-click="share($event)"><a data-action="share/whatsapp/share" href=""><img src="images/Whatsapp-48.png" /></a></div>
+                                    <div id='whtsapp' ng-click="share($event)" ng-hide="true"><a data-action="share/whatsapp/share" href=""><img src="images/Whatsapp-48.png" /></a></div>
 
                                 </div>
                                 <div ng-hide="true" class='content'>{{x.path}}</div>
