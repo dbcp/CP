@@ -28,7 +28,7 @@ body{
 .firstParentDiv
 {
     width: 100%;
-    margin-top: 50px !important;
+/*    margin-top: 50px !important;*/
 }
 .zommImageParent
 {
@@ -98,7 +98,6 @@ body{
     right: 15px;
     top: 0px;
     cursor: pointer;
-    z-index: 3005;
 }
 .tabLocal{
     margin-right: 10px;
@@ -315,5 +314,6 @@ hr {
         right: 15px;
         top: 60px;
         cursor: pointer;
+        z-index: 0;
     }
 }
