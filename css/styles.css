@@ -28,15 +28,16 @@ body{
 .firstParentDiv
 {
     width: 100%;
+    margin-top: 50px !important;
 }
 .zommImageParent
 {
     /*    width: 1000px;*/
     /*    height:600px;
         overflow: scroll;*/
-    border: 5px solid black;
+    /*    border: 5px solid black;*/
     margin-top: 50px;
-    //height: 88%;
+    background:rgba(204, 204, 204, 0.52);
 }
 .floatLeft
 {
@@ -97,6 +98,7 @@ body{
     right: 15px;
     top: 0px;
     cursor: pointer;
+    z-index: 3005;
 }
 .tabLocal{
     margin-right: 10px;
@@ -169,7 +171,7 @@ li.active
     width: 20%;
     /*    height: 248px;*/
     height: auto;
-    padding: 5px;
+    /*    padding: 5px;*/
     margin: 0;
     margin-bottom: 10px;
     background: #253120;
@@ -258,6 +260,9 @@ hr {
     width:100%;
     margin-bottom: 10px;
     /*    float: left;*/
+}
+.w3-section{
+    margin: 0 !important;
 }
 @media only screen and (max-width: 500px) {
     .currentImage {
