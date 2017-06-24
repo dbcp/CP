@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-content w3-display-container">
+    <!--    <img class="mySlides" src="models/kurti1.jpeg" style="width:100%">
+        <img class="mySlides" src="models/kurti2.jpeg" style="width:100%">
+        <img class="mySlides" src="models/kurti3.jpeg" style="width:100%">
+        <img class="mySlides" src="models/kurti4.jpeg" style="width:100%">-->
+    <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides w3-animate-top" src="slide/kurti1.jpeg" style="width:100%">
+        <img class="mySlides w3-animate-left" src="slide/kurti2.jpeg" style="width:100%">
+        <img class="mySlides w3-animate-bottom" src="slide/kurti3.jpeg" style="width:100%">
+        <img class="mySlides w3-animate-right" src="slide/kurti4.jpeg" style="width:100%">
+    </div>
+</div>
+
+<script>
+//    var slideIndex = 1;
+//    showDivs(slideIndex);
+//
+//    function plusDivs(n) {
+//        showDivs(slideIndex += n);
+//    }
+//
+//    function showDivs(n) {
+//        var i;
+//        var x = document.getElementsByClassName("mySlides");
+//        if (n > x.length) {
+//            slideIndex = 1
+//        }
+//        if (n < 1) {
+//            slideIndex = x.length
+//        }
+//        for (i = 0; i < x.length; i++) {
+//            x[i].style.display = "none";
+//        }
+//        x[slideIndex - 1].style.display = "block";
+//    }
+//
+//    var myIndex = 0;
+//    carousel();
+//
+//    function carousel() {
+//        var i;
+//        var x = document.getElementsByClassName("mySlides");
+//        for (i = 0; i < x.length; i++) {
+//            x[i].style.display = "none";
+//        }
+//        myIndex++;
+//        if (myIndex > x.length) {
+//            myIndex = 1
+//        }
+//        x[myIndex - 1].style.display = "block";
+//        setTimeout(carousel, 5000); // Change image every 2 seconds
+//    }
+
+
+
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2500);
+    }
+</script>

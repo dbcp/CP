@@ -1,6 +1,26 @@
-var app = angular.module('angularPicSearch', ['angularUtils.directives.dirPagination']);
+var app = angular.module('angularPicSearch', ['ngRoute']);
 
+app.config(function ($routeProvider) {
+    $routeProvider
 
+            // route for the home page
+            .when('/home', {
+                templateUrl: 'pages/main.html',
+                controller: 'myCtrl'
+            })
+
+            // route for the about page
+            .when('/', {
+                templateUrl: 'pages/modern.html',
+                controller: 'dCtrl'
+            })
+//
+//            // route for the contact page
+//            .when('/contact', {
+//                templateUrl: 'pages/contact.html',
+//                controller: 'contactController'
+//            });
+});
 
 app.service('myService', function ($http) {
     this.myServiceJsonData = '';
@@ -325,4 +345,11 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
             $('#whtsapp').find('a').attr('href', 'whatsapp://send?text=https://raw.githubusercontent.com/dbcp/cp/master/models/' + data[1]);
             //alert(data[1]);
         }
+    }]);
+
+
+app.controller('dCtrl', ['$scope', '$location', function ($scope, $location) {
+
+
+
     }]);
