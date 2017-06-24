@@ -204,6 +204,7 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
             $('.SecondParentDiv').css('height', setHeight);
             //$('.SecondParentDiv').css('width', $(document).width());
             $('.SecondParentDiv').show();
+            $('.searchItem').hide();
             $('html, body').animate({scrollTop: 0});
         }
 
@@ -256,6 +257,7 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
         {
             $('.SecondParentDiv').hide();
             //$scope.currentImageUrl = '';
+            $('.searchItem').show();
         }
         $scope.updateIndex = function (x)
         {
