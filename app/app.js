@@ -118,7 +118,11 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
                         calculateWidth += (parseInt($scope.noOfPages) - parseInt('9')) * parseInt('42');
                         calculateWidth += 1;
                     } else
-                        calculateWidth = 250;
+                    {
+                        calculateWidth = 324;
+                        $('.paginationParent').css('width', calculateWidth);
+
+                    }
 //$('.paginationSubParent').css('width', parseInt($scope.noOfPages) * parseInt(40));
                     $('.paginationSubParent').css('width', calculateWidth);
                 }
@@ -148,7 +152,7 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
             var jsonObj = '[' + makeJson + ']';
             $scope.filteredSearchData = jsonObj;
             $scope.filteredSearchData = JSON.parse($scope.filteredSearchData);
-            console.log($scope.filteredSearchData.length);
+            // console.log($scope.filteredSearchData.length);
             var noOfStringContain = 0;
             for (var i = 0; i < $scope.filteredSearchData.length; i++) {
                 var obj = $scope.filteredSearchData[i];
@@ -158,7 +162,7 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
                 }
             }
             $scope.noOfPages = Math.ceil(parseInt(noOfStringContain) / parseInt(10));
-            //console.log(noOfStringContain + ":::" + $scope.noOfPages);
+            // console.log(noOfStringContain + ":::" + $scope.noOfPages);
             var calculateWidth = 0;
             if (parseInt($scope.noOfPages) > parseInt('9'))
             {
@@ -166,8 +170,13 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
                 calculateWidth += (parseInt($scope.noOfPages) - parseInt('9')) * parseInt('42');
                 calculateWidth += 1;
             } else
-                calculateWidth = 250;
+            {
+                calculateWidth = 324;
+                $('.paginationParent').css('width', calculateWidth);
+
+            }
 //$('.paginationSubParent').css('width', parseInt($scope.noOfPages) * parseInt(40));
+
             $('.paginationSubParent').css('width', calculateWidth);
             $('.paginationSubParent').animate({'margin-left': '0px'});
             $scope.updateIndex(1);
