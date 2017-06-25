@@ -10,7 +10,7 @@
             <div class="firstParentDiv floatLeft row">
                 <div class='col-sm-12 col-xs-12 col-md-12 floatLeft center cutout needed'>
                     <div style='margin: auto;width:85%'>
-                        <div class='pagePrev floatLeft' ng-click="moveRight()" ng-show="noOfPages > 10"></div>
+                        <div class='pagePrev floatLeft' ng-click="moveRight()" ng-show="noOfPages > 6"></div>
                         <div class='paginationParent floatLeft'>
                             <div class='paginationSubParent floatLeft'>
                                 <ul ng-repeat="n in []| range:noOfPages" class="pagination">
@@ -18,7 +18,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class='pageNext floatLeft' ng-click="moveLeft()" ng-show="noOfPages > 10"></div>
+                        <div class='pageNext floatLeft' ng-click="moveLeft()" ng-show="noOfPages > 6"></div>
                     </div>
                 </div>
             </div>
