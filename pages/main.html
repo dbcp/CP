@@ -8,17 +8,17 @@
                 <input type="text" name="" class='searchItem' style='width:100%' ng-model='searchItemModel' ng-change="showCategorySearch()"/>
             </div>
             <div class="firstParentDiv floatLeft row">
-                <div class='col-sm-12 col-xs-12 col-md-12 floatLeft center cutout needed'>
-                    <div style='margin: auto;width:85%'>
-                        <div class='pagePrev floatLeft' ng-click="moveRight()" ng-show="noOfPages > 6"></div>
-                        <div class='paginationParent floatLeft'>
-                            <div class='paginationSubParent floatLeft'>
+                <div class='col-sm-12 col-xs-12 col-md-12 floatLeft center cutout needed' style="position: relative;">
+                    <div style='position: relative;height: 75px'>
+                        <div class='pagePrev' ng-click="moveRight()" ng-show="noOfPages > 6"></div>
+                        <div class='paginationParent'>
+                            <div class='paginationSubParent'>
                                 <ul ng-repeat="n in []| range:noOfPages" class="pagination">
                                     <li ng-click='updateIndex(n + 1)' ng-class="{'active': $index === 0}"><a href="#home">{{n + 1}}</a></li>                               
                                 </ul>
                             </div>
                         </div>
-                        <div class='pageNext floatLeft' ng-click="moveLeft()" ng-show="noOfPages > 6"></div>
+                        <div class='pageNext' ng-click="moveLeft()" ng-show="noOfPages > 6"></div>
                     </div>
                 </div>
             </div>
