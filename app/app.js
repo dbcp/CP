@@ -296,7 +296,7 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
             var left = $('.paginationSubParent').css('margin-left');
             left = left.substring(0, left.length - 2);
             var x1 = $('.paginationSubParent').css('margin-left').substring(0, $('.paginationSubParent').css('margin-left').length - 2) * parseInt('-1');
-            var x2 = parseInt($('.paginationSubParent').css('width').substring(0, $('.paginationSubParent').css('width').length - 2)) - parseInt('250');
+            var x2 = parseInt($('.paginationSubParent').css('width').substring(0, $('.paginationSubParent').css('width').length - 2)) - parseInt('216');
             var moveLeft = parseInt(left) - parseInt(38 * 3);
             //console.log(x1 + '::::' + x2);
 
