@@ -14,6 +14,10 @@ app.config(function ($routeProvider) {
                 templateUrl: 'pages/modern.html',
                 controller: 'dCtrl'
             })
+            
+            .when('/contact', {
+                templateUrl: 'pages/contact.html',
+            })
 //
 //            // route for the contact page
 //            .when('/contact', {

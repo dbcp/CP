@@ -321,9 +321,14 @@ hr {
     position: relative;
     /*    top: 73px;*/
 }
+.contact
+{
+    padding: 24px 18px;
+    color: white;
+}
 
 @media only screen and (max-width: 1024px) {
-   .currentImage {
+    .currentImage {
         width: 31%;
         margin-bottom: 20px;
         margin-right: 0%;
