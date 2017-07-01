@@ -280,13 +280,60 @@ hr {
     font-size: 10px;
     margin-top: 22px;
 }
+.pagination1 
+{
+    width: 36px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    margin-top: 23px;
+    display: inline-block;
+    text-align: center;
+    list-style-type: none;
+}
+.pagination1 li.active
+{
+    color: white;
+}
+.pagination1 li a{
+    text-decoration: none;
+}
+.pagination1 li a:link {
+    /*    color: white;*/
+}
+
+/* visited link */
+.pagination1 li a:visited {
+    color: white;
+}
+
+/* mouse over link */
+.pagination1 li a:hover {
+    color: white;
+}
+
+/* selected link */
+.pagination1 li a:active {
+    color: white;
+}
 .main{
     position: relative;
-/*    top: 73px;*/
+    /*    top: 73px;*/
+}
+
+@media only screen and (max-width: 1024px) {
+   .currentImage {
+        width: 31%;
+        margin-bottom: 20px;
+        margin-right: 0%;
+        margin-left: 2%;        
+    }
 }
 @media only screen and (max-width: 500px) {
     .currentImage {
         width: 48%;
+        margin-bottom:10px;
         margin-right: 1%;
         margin-left: 1%;        
     }

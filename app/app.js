@@ -111,18 +111,19 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
                     myService.myCategoryJsonData = $scope.filteredSearchData;
                     //console.log($scope.filteredSearchData.length);
                     $scope.noOfPages = Math.ceil(parseInt($scope.filteredSearchData.length) / parseInt(10));
+                    // $scope.noOfPages=15;
                     var calculateWidth = 0;
-                    if (parseInt($scope.noOfPages) > parseInt('9'))
-                    {
-                        calculateWidth = (parseInt('9')) * parseInt('34');
-                        calculateWidth += (parseInt($scope.noOfPages) - parseInt('9')) * parseInt('42');
-                        calculateWidth += 1;
-                    } else
-                    {
-                        calculateWidth = parseInt($scope.noOfPages) * parseInt('36');
-                        //$('.paginationParent').css('width', calculateWidth);
+//                    if (parseInt($scope.noOfPages) > parseInt('9'))
+//                    {
+//                        calculateWidth = (parseInt('9')) * parseInt('34');
+//                        calculateWidth += (parseInt($scope.noOfPages) - parseInt('9')) * parseInt('42');
+//                        calculateWidth += 1;
+//                    } else
+//                    {
+                    calculateWidth = parseInt($scope.noOfPages) * parseInt('36');
+                    //$('.paginationParent').css('width', calculateWidth);
 
-                    }
+                    // }
 //$('.paginationSubParent').css('width', parseInt($scope.noOfPages) * parseInt(40));
                     $('.paginationSubParent').css('width', calculateWidth);
                 }
@@ -164,16 +165,16 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
             $scope.noOfPages = Math.ceil(parseInt(noOfStringContain) / parseInt(10));
             // console.log(noOfStringContain + ":::" + $scope.noOfPages);
             var calculateWidth = 0;
-            if (parseInt($scope.noOfPages) > parseInt('9'))
-            {
-                calculateWidth = (parseInt('9')) * parseInt('34');
-                calculateWidth += (parseInt($scope.noOfPages) - parseInt('9')) * parseInt('42');
-                calculateWidth += 1;
-            } else
-            {
-                calculateWidth = parseInt($scope.noOfPages) * parseInt('36');
+//            if (parseInt($scope.noOfPages) > parseInt('9'))
+//            {
+//                calculateWidth = (parseInt('9')) * parseInt('34');
+//                calculateWidth += (parseInt($scope.noOfPages) - parseInt('9')) * parseInt('42');
+//                calculateWidth += 1;
+//            } else
+//            {
+            calculateWidth = parseInt($scope.noOfPages) * parseInt('36');
 
-            }
+            // }
 //$('.paginationSubParent').css('width', parseInt($scope.noOfPages) * parseInt(40));
 
             $('.paginationSubParent').css('width', calculateWidth);
@@ -269,8 +270,8 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
         }
         $scope.updateIndex = function (x)
         {
-            $('.pagination li').removeClass('active');
-            $(".pagination li").each(function (i)
+            $('.pagination1 li').removeClass('active');
+            $(".pagination1 li").each(function (i)
             {
                 if (parseInt(i) + parseInt('1') === x)
                     $(this).addClass('active');
@@ -297,12 +298,12 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
             left = left.substring(0, left.length - 2);
             var x1 = $('.paginationSubParent').css('margin-left').substring(0, $('.paginationSubParent').css('margin-left').length - 2) * parseInt('-1');
             var x2 = parseInt($('.paginationSubParent').css('width').substring(0, $('.paginationSubParent').css('width').length - 2)) - parseInt('216');
-            var moveLeft = parseInt(left) - parseInt(38 * 3);
+            var moveLeft = parseInt(left) - parseInt(36 * 3);
             //console.log(x1 + '::::' + x2);
 
             if (parseInt(x1) < parseInt(x2)) {
                 //console.log((parseInt(x1) + (parseInt(38 * 3))));
-                if ((parseInt(x1) + (parseInt(38 * 3))) < parseInt(x2))
+                if ((parseInt(x1) + (parseInt(36 * 3))) < parseInt(x2))
                 {
                     $('.paginationSubParent').animate({'margin-left': moveLeft});
                 } else
@@ -319,11 +320,11 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
             var right = $('.paginationSubParent').css('margin-left');
             right = right.substring(0, right.length - 2);
             var x1 = parseInt($('.paginationSubParent').css('margin-left').substring(0, $('.paginationSubParent').css('margin-left').length - 2));
-            var moveRight = parseInt(right) + parseInt(38 * 3);
+            var moveRight = parseInt(right) + parseInt(36 * 3);
             //console.log(x1);
             if (x1 < 0)
             {
-                if ((parseInt(x1) + (parseInt(38 * 3))) <= 0)
+                if ((parseInt(x1) + (parseInt(36 * 3))) <= 0)
                 {
                     $('.paginationSubParent').animate({'margin-left': moveRight});
                 } else
