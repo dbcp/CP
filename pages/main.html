@@ -5,7 +5,7 @@
             <!--                    <div class='floatLeft' ng-click="showCategorySearch()">search</div>
                                 <div class='clearfix'></div>-->
             <div class='floatRight' style='margin-top: -40px;width: 100px;margin-right: 3px;position: fixed;right:0px;z-index: 3001;'>
-                <input type="text" name="" class='searchItem' style='width:100%' ng-model='searchItemModel' ng-change="showCategorySearch()"/>
+                <div><a href="/banglafab/index.html" class="btn btn-info" role="button">Home</a></div>
             </div>
             <div class="firstParentDiv floatLeft row">
                 <div class='col-sm-12 col-xs-12 col-md-12 floatLeft center cutout needed' style="position: relative;">
@@ -14,7 +14,7 @@
                         <div class='paginationParent'>
                             <div class='paginationSubParent'>
                                 <ul ng-repeat="n in []| range:noOfPages" class="pagination1">
-                                    <li ng-click='updateIndex(n + 1)' ng-class="{'active': $index === 0}"><a href="#home">{{n + 1}}</a></li>                               
+                                    <li ng-click='updateIndex(n + 1)' ng-class="{'active': $index === 0}"><a href="#home/{{nav}}">{{n + 1}}</a></li>                               
                                 </ul>
                             </div>
                         </div>

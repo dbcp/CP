@@ -4,7 +4,7 @@ app.config(function ($routeProvider) {
     $routeProvider
 
             // route for the home page
-            .when('/home', {
+            .when('/home/:id', {
                 templateUrl: 'pages/main.html',
                 controller: 'myCtrl'
             })
@@ -31,7 +31,7 @@ app.service('myService', function ($http) {
     this.myServiceSearchData = '';
     this.myCategoryJsonData = '';
     this.getData = function () {
-        return  $http.get('image1.xml');
+        return  $http.get('imageXml.xml');
     }
 });
 app.filter('startFrom', function () {
@@ -55,19 +55,20 @@ app.filter('range', function () {
         return input;
     };
 });
-app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, $location, myService) {
+app.controller('myCtrl', ['$scope', '$location','$routeParams', 'myService', function ($scope, $location,$routeParams, myService) {
 
         $scope.cuurentIndex = '';
         $scope.calculateNextImageID = '';
         $scope.noOfPages = '';
         $scope.beginIndex = '';
         $scope.searchItemModel = '';
+        $scope.nav=$routeParams.id;
         // $scope.currentImageUrl = '';
         myService.getData().then(function (d)
         {
             $scope.jsonData = $.parseXML(d.data);
             myService.myServiceJsonData = $scope.jsonData;
-            $scope.showCategory('Kurti');
+            $scope.showCategory($routeParams.id);
         });
         $scope.stockClick = function (obj)
         {
@@ -353,13 +354,7 @@ app.controller('myCtrl', ['$scope', '$location', 'myService', function ($scope, 
                 }
             });
         }
-        $scope.share = function (e)
-        {
-            var data = $(e.target).parent().parent().parent().parent().find('img').attr('ng-src');
-            data = data.split('/');
-            $('#whtsapp').find('a').attr('href', 'whatsapp://send?text=https://raw.githubusercontent.com/dbcp/cp/master/models/' + data[1]);
-            //alert(data[1]);
-        }
+
     }]);
 
 

@@ -1,35 +1,16 @@
 <div class="w3-content w3-display-container">
+    
+    
+  <div class="styling"><a href="#home/38" class="btn btn-info" role="button">Kurti Size(38)</a></div>
+  <div class="styling"><a href="#home/40" class="btn btn-info" role="button">Kurti Size(40)</a></div>
+  <div class="styling"><a href="#home/42" class="btn btn-info" role="button">Kurti Size(42)</a></div>
+  <div class="styling"><a href="#home/44" class="btn btn-info" role="button">Kurti Size(44)</a></div>
+  <div class="styling"><a href="#home/46" class="btn btn-info" role="button">Kurti Size(46)</a></div>
+  <div class="styling"><a href="#home/48" class="btn btn-info" role="button">Kurti Size(48)</a></div>
+  <div class="styling"><a href="#home/palazzo" class="btn btn-info" role="button">Palazzo</a></div>
+  <div class="styling"><a href="#home/skirt" class="btn btn-info" role="button">Long Skirt</a></div>
+  <div class="styling"><a href="#home/top" class="btn btn-info" role="button">Tops</a></div>
 
-    <div class="w3-content w3-section" style="max-width:500px;margin: auto !important;">
-        <img class="mySlides w3-animate-top" src="slide/kurti1.jpeg" style="width:100%">
-        <img class="mySlides w3-animate-left" src="slide/kurti2.jpeg" style="width:100%">
-        <img class="mySlides w3-animate-bottom" src="slide/kurti3.jpeg" style="width:100%">
-        <img class="mySlides w3-animate-right" src="slide/kurti4.jpeg" style="width:100%">
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-    </div>
+
 </div>
 
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = x.length
-        }
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        x[slideIndex - 1].style.display = "block";
-    }
-</script>
